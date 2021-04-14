@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="001::BASE">
+      <UniqueIdentifier>{b0a86f05-6318-4d6a-9a91-04278a0a357d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="001::BASE\Shaders">
+      <UniqueIdentifier>{2c3d4c8c-5d1a-459a-a05a-a4e4b608a44e}</UniqueIdentifier>
+      <Extensions>fx;fxh;hlsl</Extensions>
+    </Filter>
+    <Filter Include="001::BASE\Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="001::BASE\DXUT">
+      <UniqueIdentifier>{a43c5c25-0e86-4a20-b64a-883785ff74fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="002::MAINGAME">
+      <UniqueIdentifier>{8636cb21-e26d-4b62-9707-9bbb163a5275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="003::MANAGER">
+      <UniqueIdentifier>{edd5c80d-cfc6-48d9-ada7-f221999d8482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME">
+      <UniqueIdentifier>{0b75e7d6-097f-467f-be62-d6ee5a7a95c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="003::MANAGER\INPUT">
+      <UniqueIdentifier>{2832638c-b025-4d31-ad59-d072dc3055b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="003::MANAGER\SOUND">
+      <UniqueIdentifier>{368e0f50-79cd-473f-ab79-2d2940a0a6e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="003::MANAGER\TIMER">
+      <UniqueIdentifier>{c78e98df-c571-4706-98b0-11314146444f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="003::MANAGER\IMAGE">
+      <UniqueIdentifier>{0cf0959d-da0f-4fbb-9dbd-c9df8a3250c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="003::MANAGER\CAMERA">
+      <UniqueIdentifier>{c3af88ff-e344-4502-baea-f5e7b509f41a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="003::MANAGER\SCENE">
+      <UniqueIdentifier>{0594338a-51e5-4ecf-a111-a5488dac197a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="003::MANAGER\OBEJCT">
+      <UniqueIdentifier>{d30f3263-65ed-4fb5-abed-45f2f9f676fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="003::MANAGER\MATH">
+      <UniqueIdentifier>{6e720b63-7d5a-467e-83c9-ed62ff97ab1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Scene">
+      <UniqueIdentifier>{89b5500c-56da-4377-8824-7b39a1ded246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Scene\Loading">
+      <UniqueIdentifier>{2ab14828-78b1-44cc-aa19-cfe52b20abea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Scene\Title">
+      <UniqueIdentifier>{5638c210-4d12-4b41-be1b-130710d1e4d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Scene\Ingame">
+      <UniqueIdentifier>{9401a9ff-432e-476c-be4a-055bed4b3bde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Object">
+      <UniqueIdentifier>{622edc63-8c7c-40fa-8a32-a3344fdc90c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Object\Player">
+      <UniqueIdentifier>{0cda71fb-4aea-4cd2-8c7d-08073e1d20c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Object\Enemy">
+      <UniqueIdentifier>{f1aa635c-57cb-4f0e-9263-23cfc793a981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Object\StageMap">
+      <UniqueIdentifier>{f7398f97-3eb8-4419-97bf-edc2a6495729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Object\Sky">
+      <UniqueIdentifier>{6b309aad-13c2-4009-be92-e931200921e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Object\Ground">
+      <UniqueIdentifier>{ae8654df-1337-4da4-9de4-fb34d644da50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Object\Effect">
+      <UniqueIdentifier>{7ab26d82-caa1-491d-b30e-dd384ed594e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Scene\Intro">
+      <UniqueIdentifier>{d559f865-f5e4-4f93-88e7-2f1e6d1f6494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Object\Rock">
+      <UniqueIdentifier>{654b8763-e25c-4192-a685-bc01bff15968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Object\Player\Bullet">
+      <UniqueIdentifier>{b76379a9-bd71-4c3e-9940-b8b30e66b577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="004::GAME\Object\Bomb">
+      <UniqueIdentifier>{391d0621-25e6-4c78-9f77-37dbb9a8fd7a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DXUT\Optional\directx.ico">
+      <Filter>001::BASE\Resource Files</Filter>
+    </None>
+    <ClInclude Include="DXUT\Core\DXUT.h">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTenum.h">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTmisc.h">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Core\DXUT.cpp">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTenum.cpp">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTmisc.cpp">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClCompile>
+    <ClInclude Include="DXUT\Optional\DXUTcamera.h">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTgui.h">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTres.h">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmesh.h">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmisc.h">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Optional\DXUTcamera.cpp">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTgui.cpp">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTres.cpp">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmesh.cpp">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmisc.cpp">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>001::BASE\Resource Files</Filter>
+    </CLInclude>
+    <ResourceCompile Include="EmptyProject.rc">
+      <Filter>001::BASE\Resource Files</Filter>
+    </ResourceCompile>
+    <ClInclude Include="stdafx.h">
+      <Filter>001::BASE</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame.h">
+      <Filter>002::MAINGAME</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton.h">
+      <Filter>003::MANAGER</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>003::MANAGER\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>003::MANAGER\TIMER</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>003::MANAGER\SOUND</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKsound.h">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKwavefile.h">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageManager.h">
+      <Filter>003::MANAGER\IMAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshLoader.h">
+      <Filter>003::MANAGER\IMAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManager.h">
+      <Filter>003::MANAGER\CAMERA</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>003::MANAGER\SCENE</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>003::MANAGER\SCENE</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>003::MANAGER\OBEJCT</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>003::MANAGER\OBEJCT</Filter>
+    </ClInclude>
+    <ClInclude Include="MathManager.h">
+      <Filter>003::MANAGER\MATH</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingScene.h">
+      <Filter>004::GAME\Scene\Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>004::GAME\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="HowTo.h">
+      <Filter>004::GAME\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="RankingScene.h">
+      <Filter>004::GAME\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage1.h">
+      <Filter>004::GAME\Scene\Ingame</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>004::GAME\Object\StageMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Sky.h">
+      <Filter>004::GAME\Object\Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>004::GAME\Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Earth.h">
+      <Filter>004::GAME\Object\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>004::GAME\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>004::GAME\Object\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene.h">
+      <Filter>004::GAME\Scene\Intro</Filter>
+    </ClInclude>
+    <ClInclude Include="Rock.h">
+      <Filter>004::GAME\Object\Rock</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage2.h">
+      <Filter>004::GAME\Scene\Ingame</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerBullet.h">
+      <Filter>004::GAME\Object\Player\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Bomb.h">
+      <Filter>004::GAME\Object\Bomb</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletEffect.h">
+      <Filter>004::GAME\Object\Effect</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EmptyProject.cpp">
+      <Filter>001::BASE</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame.cpp">
+      <Filter>002::MAINGAME</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>003::MANAGER\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>003::MANAGER\TIMER</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>003::MANAGER\SOUND</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKsound.cpp">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKwavefile.cpp">
+      <Filter>001::BASE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageManager.cpp">
+      <Filter>003::MANAGER\IMAGE</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshLoader.cpp">
+      <Filter>003::MANAGER\IMAGE</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManager.cpp">
+      <Filter>003::MANAGER\CAMERA</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>003::MANAGER\SCENE</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>003::MANAGER\SCENE</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>003::MANAGER\OBEJCT</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>003::MANAGER\OBEJCT</Filter>
+    </ClCompile>
+    <ClCompile Include="MathManager.cpp">
+      <Filter>003::MANAGER\MATH</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>004::GAME\Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="HowTo.cpp">
+      <Filter>004::GAME\Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="RankingScene.cpp">
+      <Filter>004::GAME\Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage1.cpp">
+      <Filter>004::GAME\Scene\Ingame</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>004::GAME\Object\StageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Sky.cpp">
+      <Filter>004::GAME\Object\Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>004::GAME\Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingScene.cpp">
+      <Filter>004::GAME\Scene\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="Earth.cpp">
+      <Filter>004::GAME\Object\Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>004::GAME\Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>004::GAME\Object\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene.cpp">
+      <Filter>004::GAME\Scene\Intro</Filter>
+    </ClCompile>
+    <ClCompile Include="Rock.cpp">
+      <Filter>004::GAME\Object\Rock</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage2.cpp">
+      <Filter>004::GAME\Scene\Ingame</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerBullet.cpp">
+      <Filter>004::GAME\Object\Player\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Bomb.cpp">
+      <Filter>004::GAME\Object\Bomb</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletEffect.cpp">
+      <Filter>004::GAME\Object\Effect</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
