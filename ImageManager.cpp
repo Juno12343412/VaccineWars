@@ -1,6 +1,6 @@
 #include "DXUT.h"
 #include "ImageManager.h"
-
+#include <mutex>
 void texture::CenterRender(Vector3 pos, Vector3 rot, Vector3 size, D3DCOLOR color)
 {
 	IMAGE->CenterRender(this, pos, rot, size, color);
@@ -80,7 +80,7 @@ ImageManager::~ImageManager()
 {
 	Release();
 }
-
+mutex ImageMutex;
 texture* ImageManager::AddImage(wstring key, wstring path, bool isMapping)
 {
 	auto find = imageMap.find(key);
@@ -104,6 +104,7 @@ texture* ImageManager::AddImage(wstring key, wstring path, bool isMapping)
 			D3DFMT_A8R8G8B8, D3DPOOL_MANAGED, D3DX_DEFAULT, D3DX_DEFAULT, NULL, &info, nullptr, &texturePtr) == S_OK)
 		{
 			texture* text = new texture(texturePtr, info);
+			lock_guard<mutex> lock(ImageMutex);
 			imageMap.insert(make_pair(key, text));
 			return text;
 		}
@@ -121,7 +122,7 @@ texture* ImageManager::FindImage(wstring key)
 	return imageMap[key];
 
 }
-
+mutex VecImageMutex;
 VECtexture* ImageManager::ADDVECIMAGE(wstring key, wstring path, int max)
 {
 	auto find = vecImageMap.find(key);
@@ -149,7 +150,7 @@ VECtexture* ImageManager::ADDVECIMAGE(wstring key, wstring path, int max)
 			vec->ADDIMAGE(text);
 		}
 	}
-
+	lock_guard<mutex> lock(VecImageMutex);
 	vecImageMap.insert(make_pair(key, vec));
 	return vec;
 }

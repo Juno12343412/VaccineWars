@@ -1,5 +1,5 @@
 #pragma once
-#pragma comment(lib, "legacy_stdio_definitions.lib")
+#pragma comment(lib,"legacy_stdio_definitions.lib")
 #pragma comment(lib, "dsound.lib")
 
 #include <iostream>

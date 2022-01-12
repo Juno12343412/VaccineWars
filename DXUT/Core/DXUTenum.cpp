@@ -1666,7 +1666,7 @@ float DXUTRankD3D9DeviceCombo( CD3D9EnumDeviceSettingsCombo* pDeviceSettingsComb
     }
     else
     {
-        int nBitDepthDelta = abs( ( long )DXUTGetD3D9ColorChannelBits( pDeviceSettingsCombo->AdapterFormat ) -
+        int nBitDepthDelta = fabsf( ( long )DXUTGetD3D9ColorChannelBits( pDeviceSettingsCombo->AdapterFormat ) -
                                   ( long )DXUTGetD3D9ColorChannelBits( pOptimalDeviceSettings->AdapterFormat ) );
         float fScale = __max( 0.9f - ( float )nBitDepthDelta * 0.2f, 0.0f );
         fCurRanking += fScale * fAdapterFormatWeight;
